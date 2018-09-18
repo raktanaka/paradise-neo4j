@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NEO4J_HOME=/var/lib/neo4j
-DATA_FILE="csv_paradise_papers.2017-11-17.zip"
+DATA_FILE="csv_paradise_papers.2018-02-14.zip"
 DATA_DIR="/csv"
 CONF=${NEO4J_HOME}/conf/neo4j.conf
 

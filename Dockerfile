@@ -1,10 +1,9 @@
-FROM neo4j:3.3.0
-MAINTAINER Ryan Boyd, <ryan@neo4j.com>
+FROM neo4j:3.4.7
 
 RUN apk update
 RUN apk add --quiet openssl sed wget unzip
-RUN cd /var/lib/neo4j/plugins/; wget "https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/download/3.3.0.1/apoc-3.3.0.1-all.jar" 
-RUN cd /var/lib/neo4j/plugins/; wget "https://github.com/neo4j-contrib/neo4j-graph-algorithms/releases/download/3.3.0.0/graph-algorithms-algo-3.3.0.0.jar"
+RUN cd /var/lib/neo4j/plugins/; wget "https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/download/3.4.0.2/apoc-3.4.0.2-all.jar" 
+RUN cd /var/lib/neo4j/plugins/; wget "https://github.com/neo4j-contrib/neo4j-graph-algorithms/releases/download/3.4.4.0/graph-algorithms-algo-3.4.4.0.jar"
 
 COPY download_db.sh /download_db.sh
 COPY configure.cql /configure.cql 
