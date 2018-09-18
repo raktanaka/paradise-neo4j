@@ -1,4 +1,5 @@
 FROM neo4j:3.4.7
+MAINTAINER raktanaka
 
 RUN apk update
 RUN apk add --quiet openssl sed wget unzip
